@@ -4,7 +4,7 @@ Helper for creating cancellable promise-returning functions.
 
 [![NPM status](https://nodei.co/npm/cancellable.png?compact=true)](https://www.npmjs.com/package/cancellable)
 
-[![Build status](https://img.shields.io/travis/foss-haas/cancellable.svg?style=flat-square)](https://travis-ci.org/foss-haas/cancellable) [![Coverage status](https://img.shields.io/coveralls/foss-haas/cancellable.svg?style=flat-square)](https://coveralls.io/r/foss-haas/cancellable?branch=master)
+[![Build status](https://img.shields.io/travis/foss-haas/cancellable.svg?style=flat-square)](https://travis-ci.org/foss-haas/cancellable)
 
 **Example:**
 

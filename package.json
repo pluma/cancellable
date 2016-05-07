@@ -5,10 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "dist": "babel -d lib src",
+    "pretest": "npm run lint",
     "test": "mocha --compilers js:babel-register",
     "lint": "snazzy --verbose",
-    "cover": "npm run lint && istanbul cover --report lcov _mocha -- --compilers js:babel-register",
-    "coveralls": "npm run cover && cat ./coverage/lcov.info | coveralls ; rm -rf ./coverage",
     "prepublish": "npm run lint && npm run test && npm run dist"
   },
   "repository": {
@@ -36,8 +35,6 @@
     "babel-plugin-transform-strict-mode": "6.8.0",
     "babel-register": "6.8.0",
     "chai": "3.5.0",
-    "coveralls": "2.11.9",
-    "istanbul": "0.4.3",
     "mocha": "2.4.5",
     "sinon": "1.17.4",
     "sinon-chai": "2.8.0",
