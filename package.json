@@ -1,0 +1,42 @@
+{
+  "name": "cancellable",
+  "version": "0.0.0",
+  "description": "Helper for creating cancellable promise-returning functions.",
+  "main": "lib/index.js",
+  "scripts": {
+    "dist": "babel -d lib src",
+    "test": "mocha --compilers js:babel-register",
+    "lint": "snazzy --verbose",
+    "prepublish": "npm run lint && npm run test && npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foss-haas/cancellable.git"
+  },
+  "keywords": [
+    "promise",
+    "cancellable",
+    "cancel"
+  ],
+  "author": "Alan Plum <me@pluma.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foss-haas/cancellable/issues"
+  },
+  "homepage": "https://github.com/foss-haas/cancellable#readme",
+  "devDependencies": {
+    "babel-cli": "6.8.0",
+    "babel-core": "6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.8.0",
+    "babel-plugin-transform-es2015-shorthand-properties": "6.8.0",
+    "babel-plugin-transform-object-rest-spread": "6.8.0",
+    "babel-plugin-transform-strict-mode": "6.8.0",
+    "babel-register": "6.8.0",
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "sinon": "1.17.4",
+    "sinon-chai": "2.8.0",
+    "snazzy": "4.0.0"
+  }
+}
