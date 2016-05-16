@@ -17,7 +17,7 @@ const promise = cancellable((cancellation, cancelled) => new Promise((resolve, r
   xhr.addEventListener('error', () => reject(new Error('Something went wrong')))
   xhr.addEventListener('load', () => resolve(xhr.response))
   xhr.send()
-  cancellation.then((reason) => {
+  cancellation.catch((reason) => {
     xhr.abort()
     reject(reason)
   })
