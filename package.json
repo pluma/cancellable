@@ -14,7 +14,7 @@
     "pretest": "npm run lint",
     "test": "mocha --compilers js:babel-register",
     "lint": "snazzy --verbose",
-    "prepublish": "npm run lint && npm run test && npm run dist"
+    "prepublish": "npm run test && npm run dist"
   },
   "repository": {
     "type": "git",
