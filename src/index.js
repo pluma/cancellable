@@ -1,5 +1,6 @@
 class CancellationError extends Error {}
 CancellationError.prototype.name = 'CancellationError'
+CancellationError.prototype.cancelled = true
 
 function deferred () {
   let _resolve, _reject

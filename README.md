@@ -50,6 +50,8 @@ Returns the promise returned by the function but adds a `cancel` method that tak
 
 A subclass of `Error` that is used to reject cancelled promises.
 
+As of 1.1.0 it also has a **cancelled** property (set to `true`) to easily distinguish it from other errors.
+
 # License
 
 The MIT/Expat license. For more information, see http://foss-haas.mit-license.org/ or the accompanying [LICENSE](https://github.com/foss-haas/cancellable/blob/master/LICENSE) file.

@@ -13,6 +13,10 @@ describe('CancellationError', () => {
     expect(error).to.be.an.instanceof(CancellationError)
     expect(error).to.have.a.property('message', message)
   })
+  it('has a "cancelled" property', () => {
+    const error = new CancellationError()
+    expect(error).to.have.a.property('cancelled', true)
+  })
 })
 
 describe('cancellable', () => {
