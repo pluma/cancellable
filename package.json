@@ -3,6 +3,12 @@
   "version": "1.1.0",
   "description": "Helper for creating cancellable promise-returning functions.",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "scripts": {
     "dist": "babel -d lib src",
     "pretest": "npm run lint",
