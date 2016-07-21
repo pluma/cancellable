@@ -1,6 +1,12 @@
-class CancellationError extends Error {}
-CancellationError.prototype.name = 'CancellationError'
-CancellationError.prototype.cancelled = true
+import ExtendableError from 'es6-error'
+
+class CancellationError extends ExtendableError {
+  constructor(message) {
+    super(message)
+    this.name = 'CancellationError'
+    this.cancelled = true
+  }
+}
 
 function deferred () {
   let _resolve, _reject

@@ -34,6 +34,7 @@
   "devDependencies": {
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
+    "babel-plugin-transform-es2015-classes": "^6.9.0",
     "babel-plugin-transform-es2015-destructuring": "6.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.8.0",
     "babel-plugin-transform-es2015-shorthand-properties": "6.8.0",
@@ -45,5 +46,8 @@
     "sinon": "1.17.4",
     "sinon-chai": "2.8.0",
     "snazzy": "4.0.0"
+  },
+  "dependencies": {
+    "es6-error": "^3.0.1"
   }
 }
