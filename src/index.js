@@ -1,7 +1,7 @@
 import ExtendableError from 'es6-error'
 
 class CancellationError extends ExtendableError {
-  constructor(message) {
+  constructor (message) {
     super(message)
     this.name = 'CancellationError'
     this.cancelled = true
