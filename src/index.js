@@ -1,4 +1,6 @@
-class CancellationError extends Error {}
+import ExtendableError from 'es6-error'
+
+class CancellationError extends ExtendableError {}
 CancellationError.prototype.name = 'CancellationError'
 CancellationError.prototype.cancelled = true
 

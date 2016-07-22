@@ -10,6 +10,7 @@ describe('CancellationError', () => {
   it('is an Error', () => {
     const message = 'an error message'
     const error = new CancellationError(message)
+    expect(error).to.be.an.instanceof(Error)
     expect(error).to.be.an.instanceof(CancellationError)
     expect(error).to.have.a.property('message', message)
   })
